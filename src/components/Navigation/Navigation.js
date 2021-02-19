@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import s from './Navigation.module.css';
 
 const Navigation = () => (
-    <div className={s.navBox}>
+    <nav className={s.navBox}>
         <NavLink
             to="/profile"
             exact
@@ -35,6 +35,6 @@ const Navigation = () => (
         >
             Settings
         </NavLink>
-    </div>
+    </nav>
 );
 export default Navigation;

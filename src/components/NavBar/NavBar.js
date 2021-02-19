@@ -2,9 +2,9 @@ import s from './NavBar.module.css';
 import Navigation from '../Navigation/Navigation';
 const NavBar = () => {
     return (
-        <nav className={s.nav}>
+        <section className={s.nav}>
             <Navigation />
-        </nav>
+        </section>
     );
 };
 export default NavBar;
