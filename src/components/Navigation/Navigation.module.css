@@ -1,0 +1,23 @@
+.navBox {
+    display: flex;
+    flex-direction: column;
+}
+.link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    font-weight: 500;
+    color: #7c85df;
+    font-size: 18px;
+}
+
+.activeLink {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    font-weight: 500;
+    /* Найти расширение
+    composes: link; */
+    color: #cf3d11;
+    font-size: 18px;
+}

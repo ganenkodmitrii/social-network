@@ -12,9 +12,9 @@ const Posts = () => {
             <div>
                 {/*  list new post  */}
                 <ul>
-                    <Post />
-                    <Post />
-                    <Post />
+                    <Post message="It is my first post" likesCount="5" />
+                    <Post message="Hi. Your post is good" likesCount="2" />
+                    <Post message="Yep, I add like" likesCount="1" />
                 </ul>
             </div>
         </div>

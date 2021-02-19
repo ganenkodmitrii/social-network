@@ -1,6 +1,6 @@
 import s from './Post.module.css';
 import ava from '../../../../images/logo-social.svg';
-const Post = () => {
+const Post = ({ message, likesCount }) => {
     return (
         <li className={s.item}>
             <img
@@ -9,9 +9,10 @@ const Post = () => {
                 width="15"
                 alt="img social network"
             />
-            <p>text</p>
+            <p>{message}</p>
             <div>
-                <span>like</span>
+                <button>like</button>
+                <span>{likesCount}</span>
             </div>
         </li>
     );
