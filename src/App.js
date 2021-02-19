@@ -1,50 +1,20 @@
 import './App.css';
-import socialImg from './images/socialImg.jpg';
-import backImage from './images/backImage.jpg';
+import Container from './components/Container/Container';
+import Header from './components/Header/Header';
+import NavBar from './components/NavBar/NavBar';
+import Main from './components/Main/Main';
+import Search from './components/Search/Search';
+import Footer from './components/Footer/Footer';
+
 const App = () => {
     return (
-        <div className="app">
-            <header className="header">
-                <div className="boxImg">
-                    <img src={socialImg} style={{ width: '25px' }} />
-                </div>
-                <div>text</div>
-            </header>
-            <nav className="nav">
-                <div>
-                    <ul>
-                        <li>Profile</li>
-                        <li>Messages</li>
-                        <li>News</li>
-                        <li>Music</li>
-                        <li>Settings</li>
-                    </ul>
-                </div>
-            </nav>
-            <main className="main">
-                <div>
-                    <img src={backImage} />
-                </div>
-                <div>
-                    <ul>
-                        <li>ava + description</li>
-                        <li>my post</li>
-                        <li>
-                            <div>
-                                new post
-                                <ul>
-                                    <li>post 1</li>
-                                    <li>post 2</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </main>
-            <footer className="footer">
-                <div>text</div>
-            </footer>
-        </div>
+        <Container>
+            <Header />
+            <NavBar />
+            <Main />
+            <Search />
+            <Footer />
+        </Container>
     );
 };
 

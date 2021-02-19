@@ -1,6 +1,7 @@
 @import-normalize;
+
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -12,42 +13,16 @@ body {
         'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #8a98a4;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
-
-.app {
-    display: grid;
-    width: 1200px;
-    grid-template-areas:
-        'h h'
-        'n m'
-        'f f';
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: 2fr 10fr;
+a {
+    text-decoration: none;
 }
-.header {
-    grid-area: h;
-    background-color: aqua;
-}
-
-.boxImg {
-    width: '30px';
-}
-
-.nav {
-    grid-area: n;
-    background-color: blue;
-}
-
-.main {
-    background-color: blueviolet;
-    grid-area: m;
-}
-.footer {
-    background-color: brown;
-    grid-area: f;
+ul {
+    list-style: none;
 }

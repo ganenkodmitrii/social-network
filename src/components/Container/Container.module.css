@@ -1,0 +1,17 @@
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-rows: 60px 1fr 20px;
+    grid-gap: 1rem;
+    grid-template-areas:
+        'header main search'
+        'nav main search'
+        'footer footer footer';
+
+    outline: 2px solid blueviolet;
+}
