@@ -1,3 +1,5 @@
-.lkj {
-    outline: 1px solid royalblue;
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 1rem;
 }

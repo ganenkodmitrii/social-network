@@ -8,18 +8,23 @@ import Settings from '../Settings/Settings';
 import NotFoundView from '../../views/NotFoundView/NotFoundView';
 
 import s from './Main.module.css';
-const Main = () => {
+const Main = ({ dialogs, messages, posts }) => {
+    console.log(dialogs);
+    console.log(messages);
+    console.log(posts);
     return (
         <main className={s.main}>
             <Section>
                 <Switch>
                     <Route path="/profile" exact>
-                        <Profile />
+                        <Profile posts={posts} />
                     </Route>
 
                     <Route path="/messages" exact>
-                        <Dialogs />
+                        <Dialogs dialogs={dialogs} messages={messages} />
                     </Route>
+
+                    {/* <Route path="/messages/:id">< /></Route> */}
 
                     <Route path="/news" exact>
                         <News />

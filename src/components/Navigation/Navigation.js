@@ -14,6 +14,7 @@ const Navigation = () => (
 
         <NavLink
             to="/messages"
+            exact
             className={s.link}
             activeClassName={s.activeLink}
         >
