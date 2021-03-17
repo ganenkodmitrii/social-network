@@ -13,6 +13,15 @@ const Navigation = () => (
         </NavLink>
 
         <NavLink
+            to="/friends"
+            exact
+            className={s.link}
+            activeClassName={s.activeLink}
+        >
+            Friends
+        </NavLink>
+
+        <NavLink
             to="/messages"
             exact
             className={s.link}

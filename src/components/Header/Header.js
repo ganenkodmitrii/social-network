@@ -1,4 +1,4 @@
-import logo from '../../images/logo-social.svg';
+import logo from '../../images/twitch.svg';
 import s from './Header.module.css';
 const Header = () => {
     return (

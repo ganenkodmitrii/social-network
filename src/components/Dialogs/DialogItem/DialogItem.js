@@ -2,6 +2,7 @@ import s from './DialogItem.module.css';
 import { NavLink } from 'react-router-dom';
 
 const DialogItem = ({ dialogs }) => {
+    // console.log(dialogs);
     return (
         <div className={s.dialogItem}>
             {dialogs.map(el => (

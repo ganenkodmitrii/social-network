@@ -6,13 +6,13 @@ import Main from './components/Main/Main';
 import Search from './components/Search/Search';
 import Footer from './components/Footer/Footer';
 
-const App = ({ appState }) => {
-    console.log(appState);
+const App = ({ state }) => {
+    // console.log(state);
     return (
         <Container>
             <Header />
             <NavBar />
-            <Main props={appState} />
+            <Main state={state} />
             <Search />
             <Footer />
         </Container>

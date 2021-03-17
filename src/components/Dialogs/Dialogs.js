@@ -3,11 +3,13 @@ import Messages from './Messages/Messages';
 
 import s from './Dialogs.module.css';
 
-const Dialogs = ({ dialogs, messages }) => {
+const Dialogs = ({ data }) => {
+    // console.log(data);
+
     return (
         <div className={s.dialogs}>
-            <DialogItem dialogs={dialogs} />
-            <Messages messages={messages} />
+            <DialogItem dialogs={data.dialogs} />
+            <Messages messages={data.messages} />
         </div>
     );
 };

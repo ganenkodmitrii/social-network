@@ -1,6 +1,7 @@
 import { Switch, Route } from 'react-router-dom';
 import Section from '../Section/Section';
 import Profile from '../Profile/Profile';
+import Friends from '../Friends/Friends';
 import Dialogs from '../Dialogs/Dialogs';
 import News from '../News/News';
 import Music from '../Music/Music';
@@ -8,20 +9,23 @@ import Settings from '../Settings/Settings';
 import NotFoundView from '../../views/NotFoundView/NotFoundView';
 
 import s from './Main.module.css';
-const Main = ({ dialogs, messages, posts }) => {
-    console.log(dialogs);
-    console.log(messages);
-    console.log(posts);
+const Main = props => {
+    // console.log(props.state.profilePage);
+    // console.log(props.state.dialogsPage);
     return (
         <main className={s.main}>
             <Section>
                 <Switch>
                     <Route path="/profile" exact>
-                        <Profile posts={posts} />
+                        <Profile data={props.state.profilePage} />
+                    </Route>
+
+                    <Route path="/friends" exact>
+                        <Friends data={props.state.friendsPage} />
                     </Route>
 
                     <Route path="/messages" exact>
-                        <Dialogs dialogs={dialogs} messages={messages} />
+                        <Dialogs data={props.state.dialogsPage} />
                     </Route>
 
                     {/* <Route path="/messages/:id">< /></Route> */}

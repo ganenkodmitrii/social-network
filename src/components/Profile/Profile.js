@@ -2,13 +2,13 @@ import Overlay from './Overlay/Overlay';
 import User from './User/User';
 import Posts from './Posts/Posts';
 // import s from './Profile.module.css';
-const Profile = ({ posts }) => {
-    console.log(posts);
+const Profile = ({ data }) => {
+    // console.log(data);
     return (
         <>
             <Overlay />
             <User />
-            <Posts posts={posts} />
+            <Posts posts={data.posts} />
         </>
     );
 };

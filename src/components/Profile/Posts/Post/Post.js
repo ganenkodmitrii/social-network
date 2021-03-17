@@ -1,27 +1,21 @@
 import s from './Post.module.css';
 import ava from '../../../../images/logo-social.svg';
+
 const Post = ({ posts }) => {
-    // console.log(posts);
+    // console.log(posts.posts);
     return (
-        <div>
-            <ul>
-                {posts.map(el => (
-                    <li key={el.id} className={s.item}>
-                        <img
-                            className={s.ava}
-                            src={ava}
-                            width="15"
-                            alt="img social network"
-                        />
-                        <p>{el.message}</p>
-                        <div>
-                            <button>like</button>
-                            <span>{el.likesCount}</span>
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </div>
+        <ul>
+            {posts.map(post => (
+                <li key={post.id} className={s.item}>
+                    <img src={ava} width="15" alt="img social network" />
+                    <p>{post.message}</p>
+                    <div>
+                        <button>like</button>
+                        <span>{post.likesCount}</span>
+                    </div>
+                </li>
+            ))}
+        </ul>
     );
 };
 export default Post;
